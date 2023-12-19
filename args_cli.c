@@ -88,7 +88,7 @@ int main(int argc, char* argv[]) {
 
     int repeatTimes = 1;
 
-    if (rvalue) {
+    if (rflag == 1 && rvalue) {
         if (contains_only_numbers(rvalue) == 0) {
             fprintf(stderr, "%s: -r value must be a number", argv[0]);
             exit(1);
